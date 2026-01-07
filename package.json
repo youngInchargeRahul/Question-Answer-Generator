@@ -1,0 +1,17 @@
+{
+  "name": "qa-generator",
+  "version": "1.0.0",
+  "description": "Question Answers data is saved in a Database",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "mssql": "^12.2.0"
+  }
+}

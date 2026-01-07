@@ -1,0 +1,48 @@
+Every project gives different ideas and we can work on it and make something out of that idea. What you built may exist or may not, but bringing an idea into existence
+is the only process. The very idea of coding: Everyone is coding, it exists, so we should not be coding. Then why: That program is working, my program looks like him,
+so I shouldn't be making this program, is wrong. It may be the same built. But after completing the project, your skill level will be very advanced. Your way of 
+thinking will change. Without starting this project, NO LEARNING AND NO SKILL GAINING; BUT if you start a project and complete it, you will learn something new and 
+this is the first goal: Learning.  
+ 
+Project Started: January 05, 2026 (HACKED TIMES)
+
+Project: Question and Answers Generator (Guessing the answer from the Data Availaible without actually having 'Question: Answer' Key)
+
+Project Type: Data Handling and Guessing the Answer 
+
+Aim:    WE WILL ANSWER ALL OF YOUR QUESTIONS AND SOLVE ALL OF YOUR PROBLEMS.
+	A CODING THAT CAN HANDLE THE DATA FROM THE DATABASE IN A UNIQUE STYLE SO THAT "ANY QUESTION RELATED TO THAT DATA CAN BE ANSWERED" WITHOUT 
+	ALLOCATING THE ACTUAL "QUESTION: ANSWER" KEY.
+        OUR CODING WILL "GUESS" THE ANSWER TO THE QUESTION FROM THE DATA. 
+
+Progress: 
+	  Level:     Q-A-Generator is still at baby phase. 
+
+	  Potential: If spent the time on this project, It shows potential to be evolved to whole another level. 
+		     The idead of just adding a search bar took us to 'AI like Robot that can answer all of the user's questions'
+                      
+          Stage :    Database, node.js are ready
+                     Two .html files linked to .js file each; are ready to get data and post data from/to the Database using node.js
+
+	  Time Spent:  20 Hours
+
+Future Ideas: Add a Search Bar for user to find answers to the questions he is  looking for. 
+              To build something that can answer all of their Questions wether it's "What is 2+2?" or "What is Evolution?".
+	      We can start our own project that will give an ARTIFICIAL BRAIN to the WebPROGRAM and it can be coded using different logics so that our program is 
+	      built using original logics. Once the ARTIFICAL BRAIN understands the logics, ANY DATA IT READS, and user asks any question related to that data, it will
+	      be answered without adding "question:answer" key
+	      Those questions which we don't have on database will be saved in a differet table of UNANSWERED QUESTION. Maybe some question will be the one no one ever 
+              asked. (A new Question means new research or invention)
+
+QUESTIONS: 1. Why can't we read and write .txt file to save data and update as we want. 
+           Situation:  We are using database and so much complex connection through node.js, But we can also simply upload a .txt file to the project folder and 
+                       read and write it from there. But I couldn't find any CODING SOLUTION for that. Maybe it exists or there is a way. 
+	
+	   2. Will I able to give up my ego and work on this Project with operators? They will keep saying: RAHUL YOU WERE ONLY A ROBOT IT WAS ALL US. BUT THAT IS A LIE.
+	      THESE ARE REALITIES THAT ARE VERY DIFFICULT TO UNDERSTAND OR EXPLAIN. Without me, no one will be working on this project. If I close this today, or in future 
+	      You will see: No one will work on this and they will say: we have ChatGPT, Gemini or other Data Handlers, So we don't need to work on this one.
+              BUT HONESTLY CODING YOUR OWN PROGRAM, WHICH BELONGS TO YOU FEELS MORE SATISFYING. AND IT WILL BE A LEARNING PROJECT FOR EVERYONE. 
+
+	   
+
+  
