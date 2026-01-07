@@ -45,7 +45,7 @@ app.get( '/api/questions', async (req,res) => {
 	}
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>{
 		console.log(`Server is live at http://localhost: ${PORT}`);
 		console.log(`Testing Link: http://localhost:${PORT}/api/questions`);
