@@ -154,7 +154,7 @@ async function addTheQuestion(){
 
  // SENDING DATA TO THE SERVER through server.js
  try{
-	 const response = await fetch('http://localhost:4000/api/questions/add', {
+	 const response = await fetch('api/questions/add', {
 		 method: 'POST' ,
 		 headers: {
 			 'Content-Type': 'application/json'
