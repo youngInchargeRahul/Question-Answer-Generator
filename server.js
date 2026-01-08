@@ -1,3 +1,4 @@
+const path = require('path');
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -10,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static(__dirname));
 
 
 /*
@@ -100,6 +101,9 @@ const questionSchema = new mongoose.Schema({
 
 const Question = mongoose.model('Question',questionSchema);
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'questionDisplay.html'));
+});
 
 //ROUTES
 
@@ -146,3 +150,4 @@ app.get('/api/questions', async (req, res) =>{
    .catch(err => console.error("MongoDB Connection Error:", err));
 
    
+
