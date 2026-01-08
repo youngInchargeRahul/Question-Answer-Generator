@@ -116,7 +116,9 @@ async function addTheQuestion(){
 	option_d: addD,
 	right_answer: addRightAnswer ,
 	solution: addSolution 
-	}; }
+	}; 
+	sendData();
+	}
 	else {
 		// SHOW MESSAGE TO FILL ALL THE FIELDS
 		alert("Please Enter All the Fields!!");
@@ -142,6 +144,7 @@ async function addTheQuestion(){
 	right_answer: null ,
 	solution: addSolution 
 	};
+	sendData();
 	}
 	else{
 		// SHOW MESSAGE TO FILL ALL THE FIELDS
@@ -149,11 +152,12 @@ async function addTheQuestion(){
 	}
 	}
 
-	
-	
-
  // SENDING DATA TO THE SERVER through server.js
- try{
+
+}
+
+async function sendData(){
+	 try{
 	 const response = await fetch('api/questions/add', {
 		 method: 'POST' ,
 		 headers: {
