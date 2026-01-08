@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 const questionSchema = new mongoose.Schema({
 	question_type: String,
@@ -72,5 +72,6 @@ app.get('/api/questions', async (req, res) =>{
    .catch(err => console.error("MongoDB Connection Error:", err));
 
    
+
 
 
