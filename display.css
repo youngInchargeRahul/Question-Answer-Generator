@@ -86,4 +86,8 @@ body{
         width: 100%;       /* Optional: make buttons full-width on mobile */
         margin-bottom: 10px;
     }
+	h2 {
+		font-size: 18px;
+	}
 }
+
