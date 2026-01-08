@@ -114,7 +114,7 @@ if(q.questionType==="descriptive")
 
 // Let us call the Pagination function HERE
 createPageNumberButtons(totalNumberOfPageButtons);
-
+window.scrollTo(0, 0);
 }
 
 // A function to make the <p> tag 'including solution of the selected question' visible
