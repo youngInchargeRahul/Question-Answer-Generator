@@ -3,8 +3,8 @@ let questionDataDB = [];
 let totalNumberOfPageButtons = 0;
 async function loadQuestions() {
     try {
-        // Use working Port 4000 link
-        const response = await fetch('http://localhost:4000/api/questions');
+     
+        const response = await fetch('/api/questions');
         if (!response.ok) throw new Error("Server not responding");
         // Get the data from SQL
         rawQuestionData = await response.json();
