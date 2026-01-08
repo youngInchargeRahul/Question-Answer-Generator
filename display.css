@@ -1,0 +1,80 @@
+body{
+	font-size: 1.33rem;
+	line-height: 1.6;
+	
+	margin:0;
+	padding:0;
+	min-height: 100vh;
+	
+	background-color: #f4f6f8;
+	-webkit-font-smoothing: antialiased;
+	
+	scroll-behaviour: smooth;
+}
+.page-title {
+            text-align: center;
+            text-transform: uppercase;
+			
+	background-color: #ffffff;
+	margin: 1.3rem 3.5rem 0 3.5rem;
+	border-radius: 2.5rem 0rem 2rem 0rem;
+	border: 1px solid #e2e8f0;
+	
+	box-shadow:
+    /* 1. Sharp edge shadow (object sitting on surface) */
+    2px 5px 4px #99ff99,
+    /* 2. Middle-distance shadow (simulates soft elevation) */
+    0 8px 16px #ff99b3,
+    /* 3. Deep, soft diffused shadow (the "lamp glow" spread) */
+    0 15px 35px #9999ff;
+        }
+.question-block {
+	
+	padding: 2.5rem;
+	margin: 1.3rem 1.5rem 0 0.1rem;
+	background-color: #ffffff;
+	
+	border-radius: 2.5rem 0rem 2rem 0rem;
+	border: 1px solid #e2e8f0;
+	
+	box-shadow:
+    /* 1. Sharp edge shadow (object sitting on surface) */
+    0px 0px 2px #99ff99,
+    /* 2. Middle-distance shadow (simulates soft elevation) */
+    0 2px 2px #ff99b3,
+    /* 3. Deep, soft diffused shadow (the "lamp glow" spread) */
+    0 3px 2px #9999ff;
+    
+
+}
+.sol{
+	
+	padding:1.5rem;
+	margin: 1rem;
+	background-color:#ffffff;
+	
+	border-radius: 1.5rem;
+	border: 1px solid #e2e8f0;
+}
+.page-num {
+  /* 1. The "Touch Rule": Minimum size for easy clicking */
+  width: 40px;
+  height: 40px;
+
+  /* 2. Layout: Perfectly centers the number inside the circle/square */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  /* 3. Shape: Matches your question cards (use 50% for circles) */
+  border-radius: 8px;
+  margin: 1rem;
+  /* 4. Clean Look: Removes default button borders and gray background */
+  border: none;
+  background: #ffffff;
+
+  /* 5. Interaction: Makes it clear the user can click it */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
