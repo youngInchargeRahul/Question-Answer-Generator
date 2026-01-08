@@ -78,3 +78,12 @@ body{
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
+@media screen and (max-width: 600px) {
+    .card-button {
+        padding: 15px 20px; /* Increase vertical padding for a larger tap area */
+        font-size: 18px;    /* Larger text for better readability */
+        width: 100%;       /* Optional: make buttons full-width on mobile */
+        margin-bottom: 10px;
+    }
+}
