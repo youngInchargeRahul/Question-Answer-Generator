@@ -22,9 +22,7 @@ body{
 	
 	box-shadow:
     /* 1. Sharp edge shadow (object sitting on surface) */
-    2px 5px 4px #99ff99,
-    /* 2. Middle-distance shadow (simulates soft elevation) */
-    0 8px 16px #ff99b3,
+    2px 5px 4px #005c99,
     /* 3. Deep, soft diffused shadow (the "lamp glow" spread) */
     0 15px 35px #9999ff;
         }
@@ -40,8 +38,6 @@ body{
 	box-shadow:
     /* 1. Sharp edge shadow (object sitting on surface) */
     0px 0px 2px #99ff99,
-    /* 2. Middle-distance shadow (simulates soft elevation) */
-    0 2px 2px #ff99b3,
     /* 3. Deep, soft diffused shadow (the "lamp glow" spread) */
     0 3px 2px #9999ff;
     
@@ -94,6 +90,7 @@ body{
 		background-color:#ffffff;
 	}
 }
+
 
 
 
