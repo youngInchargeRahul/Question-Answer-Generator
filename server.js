@@ -135,12 +135,14 @@ app.get('/api/questions', async (req, res) =>{
 	   }
    }
    );
-   
+
+   const PORT = process.env.PORT || 10000;
    mongoose.connect(process.env.MONGO_URI,{dbName: 'questions_db'})
 	.then(()=> {
 		console.log("Perfect Connection to MongoDB Atlas");
-        app.listen(4000, () => {console.log("Server running on http://localhost:4000")});
+        app.listen(PORT , () => {console.log("Server running on http://localhost:4000")});
   
 	})
    .catch(err => console.error("MongoDB Connection Error:", err));
+
    
