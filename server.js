@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/addQuestions', (req, res) => {
-    res.sendFile(path.join(__dirname, 'addQuestions.html'));
+    res.sendFile(path.join(__dirname, 'addQuestion.html'));
 });
 //ROUTES
 
@@ -74,6 +74,7 @@ app.get('/api/questions', async (req, res) =>{
    .catch(err => console.error("MongoDB Connection Error:", err));
 
    
+
 
 
 
