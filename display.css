@@ -91,9 +91,15 @@ body{
 	}
 	.sol {
 		font-size:8px;
+		border: none;
+		padding: none;
+		margin: none;
+		background-color:#ffffff;
+		border-radius: none;
 	
 	}
 }
+
 
 
 
