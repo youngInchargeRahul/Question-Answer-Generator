@@ -80,14 +80,18 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-    .card-button {
-        padding: 15px 20px; /* Increase vertical padding for a larger tap area */
-        font-size: 18px;    /* Larger text for better readability */
-        width: 100%;       /* Optional: make buttons full-width on mobile */
-        margin-bottom: 10px;
-    }
+	h1 {
+		font-size: 20px;
+	}
 	h2 {
+		font-size: 19px;
+	}
+	label {
 		font-size: 18px;
 	}
+	.sol {
+		font-size:18px;
+	}
 }
+
 
