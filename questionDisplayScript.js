@@ -44,34 +44,6 @@ loadQuestions();
 
 // Start the process
 
-
-// Declare an 'object' data type for storing the questionData in form of key: "value" type
-/**
-let questionData = [
-{
-	questionType: "mcq",
-	question: "Who is the President of The United States Of America?",
-	a: "Mr. Donald Trump",
-	b: "Mr. Narendra Modi",
-	c: "Mr. Joe Biden",
-	d: "Mr. Amit Shah",
-	rightAnswer: "a" ,
-	solution: "Mr. Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who is the 47th president of the United States (January 20, 2025-present). A member of the Republican Party, he served as the 45th president from 2017 to 2021."
-},
-{
-	questionType: "mcq" ,
-	question: "Who standardized Gurmukhi Script in Punjab?",
-	a: "Shri Guru Angad Dev Ji",
-	b: "Shri Guru Arjan Dev Ji",
-	c: "Shri Guru Nanak Dev Ji",
-	d: "Shri Guru Gobind Singh Ji",
-	rightAnswer: "a" ,
-	solution: "The Second Sikh Guru - 'Shri Guru Angad Dev Ji' refined and standardized the Gurmukhi Script."
-}
-];
-**/
-
-
 const container = document.getElementById("question-container");
 
 	
@@ -98,6 +70,7 @@ container.replaceChildren();
 	// Display questions from start index to end index by adding the needed number of question-blocks 
 	for(let i=startIndex; i<=endIndex; i++){
 	const div = document.createElement("div");
+	div.className = "question-block";
 	div.id = `question-block-${i+1}`
 	
 	q = questionDataDB[i];
@@ -119,7 +92,7 @@ container.replaceChildren();
 	<input type="radio" id="option${i}.4" onClick="checkAnswer(${i},'d')">
 	<label for="option${i}.4" id="d${i}">${q.d}</label><br><br>
 	
-	<p id="solution${i}" style="display:none">Answer: ${q.solution}</p>
+	<p id="solution${i}" class="sol" style="display:none">Answer: ${q.solution}</p>
 	<button type="button" onClick = "displaySolution(${i})"> Show Solution </button>
     <button type="button" onClick = "hideSolution(${i})"> Hide Solution </button>
 	<button type="button" onClick = "resetQuestion(${i})"> Reset Question </button>
@@ -131,7 +104,7 @@ if(q.questionType==="descriptive")
 {
 	div.innerHTML= `
 	<h2> Q ${i + 1}. ${q.question} </h2>
-	<p id="solution${i}" style="display:none"> Answer: ${q.solution} </p>
+	<p class="sol" id="solution${i}" style="display:none"> Answer: ${q.solution} </p>
 	<button type="button" onClick = "displaySolution(${i})"> Show Solution </button>
     <button type="button" onClick = "hideSolution(${i})"> Hide Solution </button>
 	`;
@@ -197,12 +170,12 @@ async function createPageNumberButtons(numberOfPages){
 	const pageNumbers = document.createElement("div");
 	pageNumbers.id = "page-number-container";
 	
-	let pageNumberHTML = "<br><br>Select Page Number: ";
+	let pageNumberHTML = "<b><br><br>&nbsp; &nbsp;&nbsp;&nbsp; Select Page Number: <b>";
 	
 	//Let us add the number of <button> tags depending on numberOfPages we need
 	if(p!==0){
 	for(let i=0;i<p;i++){
-		pageNumberHTML += `<button type="button" id="pageButton${i+1}" onClick="displayQuestions(${i+1})" >${i+1}</button>` ;
+		pageNumberHTML += `<button class="page-num" type="button" id="pageButton${i+1}" onClick="displayQuestions(${i+1})" >${i+1}</button>` ;
 	}
 	
 	pageNumberHTML +="<br><br>"
