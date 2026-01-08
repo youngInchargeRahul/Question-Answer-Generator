@@ -12,9 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
-
-app.use(express.static(path.join(__dirname, 'public')));
-
 const questionSchema = new mongoose.Schema({
 	question_type: String,
 	question_statement: String,
@@ -31,6 +28,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'questionDisplay.html'));
 });
 
+app.get('/addQuestions', (req, res) => {
+    res.sendFile(path.join(__dirname, 'addQuestions.html'));
+});
 //ROUTES
 
 app.get('/api/questions', async (req, res) =>{
@@ -72,6 +72,7 @@ app.get('/api/questions', async (req, res) =>{
    .catch(err => console.error("MongoDB Connection Error:", err));
 
    
+
 
 
 
