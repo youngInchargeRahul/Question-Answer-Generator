@@ -63,10 +63,13 @@ app.get('/api/questions', async (req, res) =>{
    );
 
 // Inside an async function where you have access to your 'db' object
-await db.collection('questions').updateMany(
-  {}, 
-  { $unset: { question_id: "" } }
-);
+db.collection('questions').updateMany( {}, { $unset: { question_id: "" } })
+.then(result => {
+        console.log(`Deleted column from ${result.modifiedCount} documents.`);
+    })
+    .catch(err => {
+        console.error(err);
+    });
 
    const PORT = process.env.PORT || 10000;
    mongoose.connect(process.env.MONGO_URI,{dbName: 'questions_db'})
@@ -78,6 +81,7 @@ await db.collection('questions').updateMany(
    .catch(err => console.error("MongoDB Connection Error:", err));
 
    
+
 
 
 
