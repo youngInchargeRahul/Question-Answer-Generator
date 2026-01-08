@@ -86,10 +86,11 @@ addQuestionContainer.innerHTML = `
 `;
 
 	}}
-	
+
+let addQuestionData;
 async function addTheQuestion(){
 	//Data to be sent will be stored in:
-	let addQuestionData;
+	
 	
 	//Getting data from user-input
 	addQuestionType = document.getElementById("questionType").value
